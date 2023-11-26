@@ -1,0 +1,11 @@
+{% extends 'padre.html' %}
+{% load static %}
+{% block mostrar_alumnos %}
+    <h6>Estos son los alumnos: </h6>
+
+        {% for alumno in Alumno %}
+            <h6>{{ Alumno.nombre }}</h6>
+        {% endfor %}
+
+
+{% endblock %}

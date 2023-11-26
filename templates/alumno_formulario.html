@@ -1,0 +1,23 @@
+{% extends 'padre.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta CHARSET="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width",
+    initial-scale="1.0">
+    <title>Formulario - Agregar Alumno</title>
+</head>
+<body>
+    <form> action="/formulario/" method="post">{% csrf_token %}
+       <table>
+           {{ miformulario.as_table }}
+       </table>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+</body>
+</html>
